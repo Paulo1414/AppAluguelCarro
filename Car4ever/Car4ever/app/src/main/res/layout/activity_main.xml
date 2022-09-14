@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F37852"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spopcoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+   <TextView
+       android:id="@+id/txtAviso"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Bem Vindo ao Car4Ever1"
+       android:layout_marginStart="120dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/spopcoes"/>
+
+    <Button
+        android:id="@+id/btnModelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="200dp"
+        android:onClick="onClickaqui"
+        android:text="Modelos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAviso" />
+
+    <Button
+        android:id="@+id/btnEncontreNos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:onClick="onClickaqui"
+        android:text="Lojas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnModelo" />
+
+    <Button
+        android:id="@+id/btnReservas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickaqui"
+        android:text="Reservas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEncontreNos" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
